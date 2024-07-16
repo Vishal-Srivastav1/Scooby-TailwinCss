@@ -1,0 +1,1445 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scooby</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+ 
+</head>
+<body>
+   <main>
+    <!--1st Section - navbar -->
+    <section class="">
+        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+              <span class="text-2xl cursor-pointer">
+               <img src="img/header2-logo.svg" alt="">
+              </span>
+        
+              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+            </div>
+        
+            <ul class="md:flex bg-black md:bg-white lg:bg-white md:items-center z-[-1] md:z-auto md:static overflow-visible  w-full  h-[0vh] md:h-auto left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0  transition-all ease-in duration-500">
+              <li class="mx-4 my-6 md:my-0 md:mx-3">
+               
+                <div class="main-wrapper relative group">
+                <button class="rounded-none w-24 py-0 px-3 flex justify-between font-semibold hover:text-[#ff6b55]">
+                    HOME<i class="fa-solid fa-caret-down mt-1"></i>
+                </button>
+              <ul class="dropdown-menu group-hover:block hidden absolute text-gray-700 pt-1 shadow-md w-36 bg-black">
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Home1</a>
+                </li>
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Home2</a>
+                </li>
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Home3</a>
+                </li>
+              </ul>
+            </div>
+          
+        </li>
+
+        <li class="mx-7 my-6 md:my-0">
+            <a href="#" class="font-semibold hover:text-[#ff6b55] duration-500">About</a>
+          </li>
+
+              <li class="mx-4 my-6 md:my-0 md:mx-3">
+                <div class="main-wrapper relative group">
+                    <button class="rounded-none w-24 py-0 px-3 flex justify-between font-semibold hover:text-[#ff6b55]">
+                        service<i class="fa-solid fa-caret-down mt-1"></i>
+                    </button>
+                  <ul class="dropdown-menu group-hover:block hidden absolute text-gray-700 pt-1 shadow-md w-36 mt-0 bg-black">
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap  ">Daycare</a>
+                    </li>
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Grooming</a>
+                    </li>
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Boarding</a>
+                    </li>
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Veterinary</a>
+                    </li>
+                  </ul>
+                </div>
+            </li>
+
+              <li class="mx-4 my-6 md:my-0 md:mx-3">
+                <div class="main-wrapper relative group">
+                    <button class="rounded-none w-24 py-0 px-3 flex justify-between font-semibold hover:text-[#ff6b55]">
+                        Pages<i class="fa-solid fa-caret-down mt-1"></i>
+                    </button>
+                  <ul class="dropdown-menu group-hover:block hidden absolute text-gray-700 pt-1 shadow-md w-36 mt-0 bg-black">
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap  ">Pricing Plan</a>
+                    </li>
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Faq</a>
+                    </li>
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Error</a>
+                    </li>
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Login</a>
+                    </li>
+                    <li>
+                        <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Sign Up</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li class="mx-4 my-6 md:my-0 md:mx-3">
+              <div class="main-wrapper relative group">
+                <button class="rounded-none w-24 py-0 px-3 flex justify-between font-semibold hover:text-[#ff6b55]">
+                    Shop<i class="fa-solid fa-caret-down mt-1"></i>
+                </button>
+              <ul class="dropdown-menu group-hover:block hidden absolute text-gray-700 pt-1 shadow-md w-36 bg-black">
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Shop</a>
+                </li>
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Shop Details</a>
+                </li>
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Cart</a>
+                </li>
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Check Out</a>
+                </li>
+              </ul>
+            </div>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0 ">
+            <div class="main-wrapper relative group">
+                <button class="rounded-none w-24 py-0 px-3 flex justify-between font-semibold hover:text-[#ff6b55]">
+                    Blog<i class="fa-solid fa-caret-down mt-1"></i>
+                </button>
+              <ul class="dropdown-menu group-hover:block hidden absolute text-gray-700 pt-1 shadow-md w-36 bg-black">
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Blog Grid</a>
+                </li>
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Blog Grid Sidebar</a>
+                </li>
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Blog Standard</a>
+                </li>
+                <li>
+                    <a href="" class="rounded-none text-white hover:bg-gray-300 py-2 px-4 block whitespace-nowrap ">Blog Details</a>
+                </li>
+              </ul>
+            </div>
+            </li>
+        
+            <li class="mx-7 md:mx-3 my-6 md:my-0">
+                <a href="#" class="font-semibold hover:text-[#ff6b55] duration-500">About</a>
+              </li>
+
+              <button style="border: 1px solid #ff6b55;" class="group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-3 md:py-1 md:mx-2  rounded-full ">
+                <i class="fa-solid fa-magnifying-glass text-[#ff6b55] group-hover:text-white"></i>
+              </button>
+              <button style="border: 1px solid #ff6b55;" class="group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-3 md:py-1 md:mx-2  rounded-full ">
+                <i class="fa-solid fa-heart text-[#ff6b55] group-hover:text-white"></i>
+              </button>
+              <button style="border: 1px solid #ff6b55;" class="group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-3 md:py-1 md:mx-2  rounded-full ">
+                <i class="fa-solid fa-cart-shopping text-[#ff6b55] group-hover:text-white"></i>
+              </button>
+              <button style="border: 1px solid #ff6b55;" class="group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-3 md:py-1 md:mx-2  rounded-full ">
+                <i class="fa-solid fa-user text-[#ff6b55] group-hover:text-white"></i>
+              </button>
+        
+
+            </ul>
+          </nav>
+        
+        
+         
+    </section>
+    <!--1st Section End navbar -->
+
+    <!--2nd Section carousel -->
+    <section class="">
+        <div class=" mt-4 justify-center content-center flex overflow-hidden ">
+            <!-- {/* Carousel button */} -->
+             <div class=" max-sm:hidden flex inset-0  items-center justify-between p-4 dark:text-white">
+              <div class="p-2">
+              <button class="items-center block  transition-all w-4 h-4 bg-black rounded-full bg-opacity-30"></button>
+              <button class="items-center p-2 transition-all w-4 h-4 bg-black rounded-full bg-opacity-30"></button>
+              </div>
+             </div>
+              <!-- {/* End Carousel button */} -->
+               
+<!--         
+               {/* ----------------------------------------------- */}
+                     {/* Card page */}  -->
+             <div class=" w-full  bg-[#f4ede6] lg:hidden max-lg:hidden max-sm:block ">
+             <div class="bg-[#f4ede6] p-8 overflow-hidden">
+           
+           </div>
+              <div class=" flex mt-14 mb-8 ml-7">
+                 <span class="font-mono font-light ml-12 mt-5 flex text-right absolute dark:text-white ">Your Pet Our Family</span>
+                 <img class="w-64 mr-26 opacity-80"  src="img/icon/hero2-text-vect.svg" alt="img" />
+              </div>
+            
+             <h1 class="ml-7  sticky cursor-text mt-12 p-8 mb-8 flex-wrap text-6xl sm:text-5xl tracking-tighter font-mono font-extrabold text-[#001d23] dark:text-white">
+              Your <span class="text-[#ff6b55] ">Pet</span> is Part Of Our Family.
+              </h1>
+            <div class="flex mb-2 bg-[#f4ede6] sticky overflow-hidden translate-x-6">
+            <button type="submit" class=" w-44 h-12 mb-6 bg-[#ff6b55] tracking-tighter  hover:bg-black rounded-lg mr-6 text-white  
+              border-t-4 border-l-4 border-t-[#ef9686] border-l-[#ef9686] hover:border-0 hover:duration-700 hover:border-r-4 hover:border-b-4 hover:border-r-[#f4ede6] hover:border-b-[#f4ede6] sticky font-serif font-semibold text-center
+              ">Make a Reservation
+             </button>
+            
+             <button type="submit" class=" w-32 h-12 mb-6 bg-[#001d23] tracking-tighter hover:bg-[#ff6b55] rounded-lg  text-white
+                border-t-4 border-l-4 border-t-[#25373a]  border-l-[#25373a]  hover:border-0 hover:border-[#f4ede6] hover:duration-700 hover:border-r-4 hover:border-b-4 hover:border-r-[#f4ede6] hover:border-b-[#f4ede6] sticky font-serif font-semibold text-center
+              ">About More
+              </button>
+             
+             </div>
+               <div class=" hidden md:block  lg:block bg-[#f4ede6] p-7 max-md:p-8 overflow-hidden">
+           
+               </div>
+           </div>
+        
+           <!-- {/*  End Card Page */}
+        
+               {/* ------------ ----------------------------------- */} -->
+          <!-- {/* Start card */} -->
+           <div class="w-full h-full hidden lg:block max-lg:block max-sm:hidden ">
+           <!-- {/* <img class=" absolute opacity-100" src="img/bg/h2-hero-bg.png" alt="bg" /> */} -->
+               
+            <!-- <Carousel indicators={false} slideInterval={50} leftControl={true} rightControl={true} class=" lg:h-96 sm:h-64 tr w-full md:mb-16 transition-transform"> -->
+              <!-- {/* 1st page start Carousel */} -->
+          <div class="flex w-full items-center justify-center overflow-hidden transition-transform">
+               <img class=" absolute opacity-100" src="img/bg/h2-hero-bg.png" alt="bg" />
+            
+                <!-- {/* Card 1 */}  -->
+             <div class="w-full  bg-[#f4ede6] h-96 lg:h-full">
+             <div class="bg-[#f4ede6] p-6 overflow-hidden">
+           
+           </div>
+              <div class=" flex sm:mt-20 lg:mb-8 mb-2 lg:ml-8 p-8 lg:p-0">
+                 <span class="font-mono font-light translate-x-14 lg:translate-x-16 lg:translate-y-7 sm:-translate-y-6 flex mt-2 lg:mt-3 text-right absolute dark:text-white sm:text-xs md:text-lg ">Your Pet Our Family</span>
+                 <img class="lg:w-64 sm:w-34 sm:-translate-y-8 lg:translate-y-6 lg:mr-26 sm:translate-x-6 opacity-80"  src="img/icon/hero2-text-vect.svg" alt="img" />
+              </div>
+            
+             <h1 class="ml-7 sticky -translate-y-8 md:translate-x-8 lg:translate-x-0 lg:-translate-y-0 cursor-text lg:mt-8 lg:p-8 lg:mb-14 flex-wrap lg:text-6xl md:text-3xl sm:text-2xl tracking-tighter font-mono font-extrabold text-[#001d23] dark:text-white ">
+              Your <span class="text-[#ff6b55] ">Cat</span> <span class="text-[#ff6b55] hidden">Pet</span> is Part Of Our Family.
+              </h1>
+           
+               <div class=" hidden md:block  lg:block bg-[#f4ede6] p-8 max-md:p-8 overflow-hidden">
+           
+               </div>
+           </div>
+        
+           <!-- {/*  End 1st Card  */} -->
+        
+        
+           <!-- {/* Card 2 */} -->
+           <div class="rounded-none border-0 bg-[#f4ede6]  w-full h-96 lg:h-full">
+           <div class=" flex mt-6">
+                 <img class="mb-3 md:p-12 lg:p-10  md:mb-8  md:translate-y-10  md:-translate-x-7 opacity-100"  src="img/bg/hero2-img-cat.png" alt="img" />
+               </div>
+        
+            </div>
+             
+            </div>
+        
+            <!-- {/* 1st page End Carousel */} -->
+              
+             <!-- {/* ---------------------------------------------- */} -->
+            <!-- </Carousel> -->
+
+            <div class="flex mb-8  bg-[#f4ede6] md:p-12 md:-translate-y-20   sticky overflow-hidden">
+            <img class=" absolute opacity-100" src="img/bg/h2-hero-bg.png" alt="bg" />
+            
+              <button type="submit" class=" lg:-translate-y-10 ml-5 lg:ml-0 h-12 w-56 mt-4 mb-6 lg:mb-0 lg:mt-3 bg-[#ff6b55] tracking-tighter rounded-lg mr-6 text-white 
+              border-t-4 border-l-4 border-t-[#ef9685] border-l-[#ef9685] hover:bg-black hover:border-0 hover:duration-700 hover:border-r-4 hover:border-b-4 hover:border-r-[#f4ede6] hover:border-b-[#f4ede6] sticky font-serif font-semibold text-center
+              ">Make a Reservation</button>
+              <button type="submit" class=" lg:-translate-y-10 lg:w-36 h-12 mt-4 lg:mt-3 mb-6 bg-[#001d23] tracking-tighter hover:bg-[#ff6b55] rounded-lg  text-white 
+               border-t-4 border-l-4 border-t-[#25373a]  border-l-[#25373a]  hover:border-0 hover:border-[#f4ede6] hover:duration-700 hover:border-r-4 hover:border-b-4 hover:border-r-[#f4ede6] hover:border-b-[#f4ede6] sticky font-serif font-semibold text-center
+              ">About More</button>
+             </div>
+             <!-- {/*black hover:bg-[#001d23] */} -->
+             </div>
+              <!-- {/* end card */} -->
+        
+        
+        
+        
+              <!-- {/* social icon */} -->
+              <div class=" max-sm:hidden inset-0 flex rounded-full items-center justify-between p-4">
+               <ul class="p-2">
+        
+                <li class="sticky hover:text-[#ff6b55] mb-4">
+                 <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+        
+                <li class="sticky hover:text-[#ff6b55] mb-6 text-center">.</li>
+        
+                 <li class="sticky hover:text-[#ff6b55] mb-4">
+                 <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+        
+                <li class="sticky hover:text-[#ff6b55] mb-6 text-center">.</li>
+        
+                <li class="sticky hover:text-[#ff6b55] mb-4"> 
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+        
+                <li class="sticky hover:text-[#ff6b55] mb-6 text-center">.</li>
+        
+                <li class="sticky hover:text-[#ff6b55]">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+        
+               </ul>
+             </div> 
+          
+              <!-- {/* End Social icon */}-->
+               
+            </div>
+    
+    </section>
+    <!--2nd Section Carousel Section -->
+
+    <!--3rd service Section -->
+    <div class="flex h-full justify-center sticky lg:-translate-y-28 md:-translate-y-28 mb-16 overflow-hidden ">
+
+        <!-- <Carousel indicators={false} slideInterval={2000} leftControl={true} rightControl={true} class="sm:h-96 max-sm:h-96 lg:h-96 sm:lg:h-96 justify-between    "> -->
+            <!-- {/*--------- 1st Row Start---------- */} -->
+            <div class="grid h-full   w-full lg:grid-cols-5 max-sm:grid-cols-1 sm:grid-cols-3  md:grid-cols-3 justify-between">
+    
+    <!-- {/* 1st card services */} -->
+        <div class=" hidden md:block lg:block w-full h-full items-center justify-center text-center  ">
+            <div class="flex justify-end ">
+            <img class=" absolute flex  justify-end" src="img/bg/services-card-vec2.png" alt="bg" />
+            </div>
+        <div class=" bg-[#f5f2fc] p-12">
+        <div class=" flex justify-center ">
+        <img class=" mb-5" src="img/icon/bording3.svg" alt="" />
+    </div>  
+<h3 class="text-3xl mb-4 font-sans font-medium tracking-tight text-gray-900 dark:text-white">
+    <a href="">
+    Boarding
+    </a>
+    </h3>
+    <p class="flex-wrap font-sans text-[#ff6b55] ">Pellentesque maximus augue orciquista uten  aliquet risus In hac  habitasse.</p>
+    <div class="flex justify-start">
+            <img class=" absolute flex justify-items-start" src="img/bg/services-card-vec2.png" alt="bg" />
+    </div>
+    <div class="mt-3 mb-0 font-sans font-semibold ">        
+    <a class="flex items-center justify-center hover:ml-1 hover:mr-1 "  href="">More Details<img class="flex justify-end hover:ml-5 hover:mr-1 transition-all" src="img/icon/h2-btn-arrow.svg" alt="" />
+    </a>
+    </div>
+    </div>
+    </div>
+<!-- {/* 1st card Services End */} -->
+
+<!-- {/* 2nd card services */} -->
+<div class="w-full h-full hidden md:block lg:block items-center justify-center text-center mb-10">
+            <div class="flex justify-end ">
+            <img class=" absolute flex  justify-end" src="img/bg/services-card-vec2.png" alt="bg" />
+            </div>
+        <div class=" bg-[#fbfbfb] p-12">
+        <div class=" flex justify-center ">
+        <img class=" mb-5" src="img/icon/vetenary3.svg" alt="" />
+    </div>  
+<h3 class=" text-3xl mb-4 font-sans font-medium tracking-tight text-gray-900 dark:text-white">
+    <a href="">
+    Vaterinary
+    </a>
+    </h3>
+    <p class="flex-wrap font-sans text-[#ff6b55]">Pellentesque maximus augue orciquista uten  aliquet risus In hac  habitasse.</p>
+    <div class="flex justify-start">
+            <img class=" absolute flex justify-items-start" src="img/bg/services-card-vec2.png" alt="bg" />
+    </div>
+    <div class="mt-3 font-sans font-semibold ">        
+    <a class="flex items-center justify-center hover:ml-1 hover:mr-1 "  href="">More Details<img class="flex justify-end hover:ml-5 hover:mr-1 transition-all" src="img/icon/h2-btn-arrow.svg" alt="" />
+    </a>
+    </div>
+    </div>
+    </div>
+<!-- {/* 2nd card Services End */} -->
+
+<!-- {/* 3rd card services */} -->
+<div class=" w-full h-full items-center justify-center text-center overflow-hidden">
+            <div class="flex justify-end ">
+            <img class=" absolute flex  justify-end opacity-15" src="img/bg/h2-services-title-rt.png" alt="bg" />
+            </div>
+        <div class=" bg-[#fef8ef] p-9 ">
+        <div class="justify-center items-center text-center">
+        <h1 class="font-mono  tracking-tighter font-extrabold text-4xl p-2 mt-11 md:mt-7 lg:mt-11 ">See Our</h1>
+        <h1 class="font-mono tracking-tighter font-extrabold text-4xl p-2 mt-2">All</h1>
+        <img class=" absolute  hidden lg:block justify-items-start " src="img/icon/services-text-vect.svg" alt="bg" />
+        <h1 class="font-mono tracking-tighter font-extrabold text-4xl p-4 mt-0 mb-12">Services.</h1>
+        
+    </div>  
+
+    <div class="flex justify-start">
+            <img class=" absolute -translate-y-12 flex justify-items-start opacity-15" src="img/bg/h2-services-title-lb.png" alt="bg" />
+    </div>
+    <div class="flex  justify-center">        
+        <button type="submit" class="   h-12 w-36 mt-0 mb-0  bg-[#ff6b55] tracking-tighter rounded-lg text-white 
+        border-t-4 border-l-4 border-t-[#ef9685] border-l-[#ef9685] hover:bg-black hover:border-0 hover:duration-700 hover:border-r-4 hover:border-b-4 hover:border-r-[#f4ede6] hover:border-b-[#f4ede6] sticky font-serif font-semibold text-center
+        ">Book Your Day</button>
+     </div>
+    </div>
+    </div>
+<!-- {/* 3rd card Services End */} -->
+
+<!-- {/* 4th card services */} -->
+<div class=" w-full h-full md:hidden lg:block items-center justify-center text-center">
+            <div class="flex justify-end ">
+            <img class=" absolute flex  justify-end" src="img/bg/services-card-vec2.png" alt="bg" />
+            </div>
+        <div class=" bg-[#f5f2fc] p-12">
+        <div class=" flex justify-center ">
+        <img class=" mb-5" src="img/icon/daycare3.svg" alt="" />
+    </div>  
+<h3 class="text-3xl mb-4 font-sans font-medium tracking-tight text-gray-900 dark:text-white">
+    <a href="">
+    Daycare
+    </a>
+    </h3>
+    <p class="flex-wrap font-sans text-[#ff6b55]">Pellentesque maximus augue orciquista uten  aliquet risus In hac  habitasse.</p>
+    <div class="flex justify-start">
+            <img class=" absolute flex justify-items-start" src="img/bg/services-card-vec2.png" alt="bg" />
+    </div>
+    <div class="mt-3 font-sans font-semibold ">        
+    <a class="flex items-center justify-center hover:ml-1 hover:mr-1"  href="">More Details<img class="flex justify-end hover:ml-5 hover:mr-1 transition-all" src="img/icon/h2-btn-arrow.svg" alt="" />
+    </a>
+    </div>
+    </div>
+    </div>
+<!-- {/* 4th card Services End */} -->
+
+<!-- {/* 5th card services */} -->
+<div class="w-full h-full md:hidden lg:block items-center justify-center text-center">
+            <div class="flex justify-end ">
+            <img class=" absolute flex  justify-end" src="img/bg/services-card-vec2.png" alt="bg" />
+            </div>
+        <div class=" bg-[#fcf1f1] p-12">
+        <div class=" flex justify-center ">
+        <img class=" mb-5" src="img/icon/grooming3.svg" alt="" />
+    </div>  
+<h3 class="text-3xl mb-4 font-sans font-medium tracking-tight text-gray-900 dark:text-white">
+    <a href="">
+    Grooming
+    </a>
+    </h3>
+    <p class="flex-wrap font-sans text-[#ff6b55]">Pellentesque maximus augue orciquista uten  aliquet risus In hac  habitasse.</p>
+    <div class="flex justify-start">
+            <img class=" absolute flex justify-items-start" src="img/bg/services-card-vec2.png" alt="bg" />
+    </div>
+    <div class="mt-3 font-sans font-semibold group ">        
+    <a class="flex items-center justify-center hover:ml-1 group-hover hover:mr-1 transition-all  group"  href="">More Details<img class="flex  justify-end hover:ml-5 hover:mr-1 group-hover" src="img/icon/h2-btn-arrow.svg" alt="" />
+    </a>
+    </div>
+    </div>
+    </div>
+<!-- {/* 5th card Services End */} -->
+
+
+            </div>
+        <!-- {/* ---------------1st Row End------------ */} -->
+
+        
+    <!-- </Carousel> -->
+    </div>
+    <!--3rd End service Section -->
+
+
+   <!--4th Section PetCare-->
+   <div class=" bg-[#fbfbfb] flex max-sm:flex-wrap max-md:flex-wrap w-full items-center justify-center overflow-hidden transition-transform -translate-y-20 ">
+   
+    <img class=" mb-96 hidden lg:block "  src="img/bg/services-img-bg-vec.png" alt="img" />
+<div class="flex justify-center items-center text-center rounded-none max-w-lg  border-0  sticky  ">
+
+<img class="max-w-lg lg:mb-20 lg:mt-16 lg:mr-60 p-20 absolute   opacity-100"  src="img/bg/h2-services-img.png" alt="img" />
+<div class=" flex lg:mt-10  ml-7">
+      
+      <img class="max-w-lg lg:mr-72 lg:mt-16 p-20" src="img/icon/h2-services-img-bg.svg" alt="bg" />
+     </div>
+
+ </div>
+
+     <!-- {/* Card 2*/}  -->
+  <div class="mr-0">
+
+<img class=" lg:mt-8 ml-4 lg:ml-0 " src="img/icon/section-sl-no.svg" alt="bg" /> 
+   
+<div class=" ml-4 lg:ml-0">
+  <h1 class="text-5xl tracking-tighter font-mono font-extrabold text-[#001d23] dark:text-white">
+  We Are Providing Pet Care Service  For Years.
+   </h1>
+   <p class=" mt-4 ">Pellentesque maximus augue orci, 
+     quis congue purus iaculison id. Maecenas eu lorem 
+     quisesdoi massal molestie vulputate in sitagi amet diam. 
+     Cras eu odio sit amet ipsum cursus for that gone pellentesquea. 
+     thisaton Vestibulum ut aliquet risus. In hac habitasse plateajoa dictumst. 
+     Nuncet posuere scelerisque justo in accumsan.
+     </p>
+     </div>
+  <div>
+     <h3 class="text-2xl mt-4 ml-4 lg:ml-0"> 
+     <img class=" absolute"  src="img/icon/author-quat-icon.svg" alt="img" />
+     &nbsp; &nbsp; Pllentesque maximus augue orci, quis congue purus iaculisona ideno joku Maecenas eu lorem quisesdoi massal 
+         molestie jugnute vulputate in sitagajoi amet diam Cras eu odio sit amet.
+         </h3>
+         </div>
+    <h1 class="font-extrabold font-mono text-2xl mt-4 ml-4 lg:ml-0">Kash Prestonal</h1>
+    <h4 class="text-[#ff6b55] lg:mb-16 ml-4 lg:ml-0">Founder, Scooby</h4>
+  
+</div>
+<br />
+<br />
+  
+ </div>
+   <!--4th Section PetCare-->
+
+
+   <!-- 5th Section ChooseUs -->
+   <div class=" bg-[#f5f2fc] w-full items-center justify-center overflow-hidden transition-transform ">
+       
+    <!-- {/* Card 2*/}  -->
+
+
+<div class="">
+ <h1 class="text-center mt-16 text-4xl lg:text-6xl  tracking-tighter font-mono font-extrabold text-[#001d23] dark:text-white">
+ Why Choose Us
+  </h1>
+  <div class="mt-8">
+    
+  <p class="text-center justify-center mr-16 ml-16 text-2xl font-sans font-semibold text-[#253d4e]">
+    Enjoy Your Holiday We Can Keep Them Happy <Link class="text-[#ff6b55] underline" href=" ">Your Pet Our Priority</Link> Happy Pets,
+    </p>
+    <p class="p-2 text-center justify-center mr-16 ml-16 text-2xl font-sans font-semibold text-[#253d4e]">
+         Happy Humans We Are The Best Of This Country We Are Always Ready For Your Pet.
+    </p>
+
+  </div>
+    </div> 
+
+<br />
+<br />
+<div class="flex mb-6 max-sm:flex-wrap max-md:flex-wrap w-full items-center justify-center overflow-hidden transition-transform sticky ">
+
+<div class="">
+<img class=" lg:mt-8 ml-6 lg:ml-4 " src="img/icon/care2.svg" alt="bg" /> 
+<h1 class="font-extrabold ml-4 lg:ml-4 font-mono text-2xl mt-4">Personalized Care</h1>
+<h4 class="text-[#ff6b55] lg:mb-16 mb-8 ml-4 lg:ml-4">Pellentesque maximus augue orci,&nbsp; &nbsp; quis congue purus iaculison</h4>
+</div>
+
+<div class="">
+<img class=" lg:mt-8 ml-6 lg:ml-0 " src="img/icon/team2.svg" alt="bg" /> 
+<h1 class="font-extrabold ml-4 lg:ml-0 font-mono text-2xl mt-4">Trusted Team</h1>
+<h4 class="text-[#ff6b55] lg:mb-16 mb-8 ml-4 lg:ml-0">Pellentesque maximus augue orci,&nbsp; &nbsp; quis congue purus iaculison</h4>
+</div>
+
+<div class="">
+<img class=" lg:mt-8 ml-6 lg:ml-0 " src="img/icon/mind2.svg" alt="bg" /> 
+<h1 class="font-extrabold ml-4 lg:ml-0 font-mono text-2xl mt-4">Peace Of Mind</h1>
+<h4 class="text-[#ff6b55] ml-4 lg:ml-0 lg:mb-16 mb-8">Pellentesque maximus augue orci,&nbsp; &nbsp; quis congue purus iaculison</h4>
+</div>
+
+<div class="">
+<img class=" lg:mt-8 ml-6 lg:ml-0 " src="img/icon/care2.svg" alt="bg" /> 
+<h1 class="font-extrabold ml-4 lg:ml-0 font-mono text-2xl mt-4">Nice Environment</h1>
+<h4 class="text-[#ff6b55] lg:mb-16 ml-4 lg:ml-0 mb-3">Pellentesque maximus augue orci,&nbsp; &nbsp; quis congue purus iaculison</h4>
+</div>
+
+</div>
+
+<!-- {/*  choose images */} -->
+<div class="flex p-10 mt-4 mb-24 w-full items-center justify-between overflow-hidden transition-transform bg-[#fbfbfb]  sticky ">
+
+<p class="w-full flex justify-center">
+<img class="" src="img/icon/partner/arrow.svg" alt="bg" /> 
+</p>
+
+<p class="w-full max-sm:hidden">
+<img class="" src="img/icon/partner/avianca.svg" alt="bg" /> 
+</p>
+
+<p class="w-full lg:block md:block">
+<img class="" src="img/icon/partner/envato.svg" alt="bg" />
+</p> 
+
+<p class="w-full hidden lg:block">
+<img class=" " src="img/icon/partner/olinski.svg" alt="bg" />
+</p> 
+
+<p class="w-full hidden lg:block md:block">
+<img class="" src="img/icon/partner/ozgeo.svg" alt="bg" />
+</p> 
+
+<p class="w-full hidden lg:block">
+<img class="" src="img/icon/partner/xidex.svg" alt="bg" /> 
+</p>
+
+</div>
+<!-- {/* End choose images */} -->
+ 
+</div>
+   <!-- 5th Section ChooseUs-->
+
+
+   <!-- 6th Section ServicesOptions -->
+   <div class=" lg:mb-10  bg-[#fbfbfb] w-full items-center justify-center overflow-hidden transition-transform ">
+       
+    <!-- {/* Card 2*/}  -->
+
+
+<div class="">
+ <h1 class="text-center lg:mt-24 mt-8 text-1xl lg:text-5xl  font-sans font-extrabold text-[#001d23] dark:text-white">
+ Three Step And Enjoy Your Day.
+  </h1>
+</div> 
+
+<br />
+<br />
+<div class="flex mb-6 max-sm:flex-wrap max-md:flex-wrap w-full items-center justify-center overflow-hidden sticky  cursor-pointer">
+ 
+ <!-- {/* card 1st */} -->
+<div class="w-full  ml-9 mr-10 md:mr-5 md:ml-5 mb-8 lg:mb-0 mt-8">
+<div class=" bg-[#ffe1cf] hover:bg-[#ffe1cf]">
+<div class="  justify-end text-end items-end flex  translate-x-12"> 
+    <span class=" text-1xl w-20 p-1  font-serif font-semibold mr-10 rounded-lg mb-4 bg-[#fbfbfb] text-[#ff6b55] hover:bg-[#ff6b55] hover:text-white ">Step &nbsp; &nbsp; &nbsp;</span>
+     <span class=" text-3xl p-3 font-sans font-extrabold absolute rounded-full bg-[#fbfbfb] hover:bg-[#ff6b55] text-[#ff6b55] hover:text-white">01</span>
+
+ </div>
+     <div class="flex items-center justify-center text-center  hover:ml-2 ">
+      <img src="img/icon/search2.svg" alt="" />
+     </div>
+     
+   <div class="mt-2 p-2">
+    <h5 class=" cursor-text text-2xl font-bold text-center tracking-tight mt-4 mb-3 text-gray-900 dark:text-white">
+        Select Service
+        </h5>
+        <p class=" cursor-text font-mono mb-16 tracking-tight justify-center items-center text-center text-gray-700 dark:text-gray-400">
+           Read verified reviews by pet owners like you and choose a sitter who’s a great match for you .
+        </p>
+   </div>
+</div>
+</div>
+
+ <!-- {/* End card 1st */} -->
+
+<!-- {/* Arrow-icon 1nd */} -->
+<div class=" hidden lg:block">
+<img class="p-4 w-20" src="img/icon/contact-title-vec.svg" alt="" />
+</div>
+
+ <!-- {/* card 2nd */} -->
+<div class="w-full ml-9 mr-10 md:mr-5 md:ml-5 mb-8 lg:mb-0 mt-8 ">
+<div  class=" bg-[#e9f6fb] hover:bg-[#e9f6fb]">
+<div class=" justify-end text-end items-end flex  translate-x-12"> 
+ <button class=" flex bg-[#0d6efd] hover:bg-[#ffc226] justify-end rounded-full">
+    <span class=" text-1xl w-20 p-1  font-serif font-semibold mr-10 rounded-lg mt-3 bg-[#fbfbfb] text-[#97d2ec] hover:bg-[#97d2ec] hover:text-white ">Step &nbsp; &nbsp; &nbsp;</span>
+     <span class=" text-3xl p-3 font-sans font-extrabold absolute rounded-full bg-[#fbfbfb] hover:bg-[#97d2ec] text-[#97d2ec] hover:text-white">02</span>
+    </button>
+     </div>
+     <div class="flex items-center justify-center text-center   hover:ml-2 ">
+      <img src="img/icon/appoinment2.svg " alt="" />
+     </div>
+     
+     <div class="p-2 mt-2">
+        <h5 class="text-2xl font-bold text-center mt-4 mb-3 cursor-text tracking-tight text-gray-900 dark:text-white">
+            Book Your Day
+         </h5>
+         <p class="font-mono mb-16 tracking-tight justify-center items-center text-center text-gray-700 dark:text-gray-400 cursor-text">
+            Read verified reviews by pet owners like you and choose a sitter who’s a great match for you .
+         </p>
+     </div>
+  
+    </div>
+</div>
+ <!-- {/* card 2nd End */} -->
+
+<!-- {/* 2nd Arrowicon */} -->
+<div class=" hidden lg:block">
+<img class="p-4 w-20 " src="img/icon/contact-title-vec.svg" alt="" />
+</div>
+
+<!-- {/* card 3rd */} -->
+<div class="w-full ml-9 mr-10 md:mr-5 md:ml-5 mb-8 lg:mb-0 mt-8">
+<div  class=" bg-[#cfedcf] hover:bg-[#cfedcf]">
+<div class=" justify-end text-end items-end flex  translate-x-12"> 
+    <span class=" text-1xl w-20 p-1  font-serif font-semibold mr-10 rounded-lg mb-4 bg-[#fbfbfb] text-[#ff6b55] hover:bg-[#ff6b55] hover:text-white ">Step &nbsp; &nbsp; &nbsp;</span>
+     <span class=" text-3xl p-3 font-sans font-extrabold absolute rounded-full bg-[#fbfbfb] hover:bg-[#ff6b55] text-[#ff6b55] hover:text-white">03</span>
+ </div>
+     <div class="flex items-center justify-center text-center  hover:ml-2 ">
+      <img src="img/icon/relax2.svg " alt="" />
+     </div>
+     
+   <div class="p-2 mt-2">
+    <h5 class="text-2xl font-bold mt-4 mb-3 text-center tracking-tight text-gray-900 dark:text-white cursor-text">
+        Have Relax
+        </h5>
+        <p class="font-mono mb-16 tracking-tight justify-center items-center text-center text-gray-700 dark:text-gray-400 cursor-text">
+           Read verified reviews by pet owners like you and choose a sitter who’s a great match for you .
+        </p>
+   </div>
+</div>
+</div>
+ <!-- {/* card 3rd End */} -->
+
+</div>
+</div>
+   <!-- 6th Section ServicesOptions-->
+
+
+ <!-- 7th Section Contact-->
+   <div class="flex mb-10 mt-16 max-sm:flex-wrap max-md:flex-wrap w-full items-center justify-center overflow-hidden sticky  cursor-pointer">
+    <img class=" absolute opacity-100 w-full h-full" src="img/bg/h2-contact-area.png" alt="bg" />
+<!-- {/* div card 1st */} -->
+   <div class="w-96">
+   <!-- {/* <img class=" absolute w-96 h-full opacity-100 " src="img/bg/h2-contact-area.png" alt="bg" /> */} -->
+  
+  <div class="mt-3 flex ml-9 ">
+  <img class=" absolute lg:mt-14 mt-9 p-6" src="img/icon/contact-title-vec.svg" alt="" />
+  </div>
+  <h5 class=" sticky lg:mt-8 mt-4 p-6 cursor-text text-5xl font-extrabold  font-mono  text-gray-900 dark:text-white">
+  Contact
+  </h5>
+
+  <div class=" sticky max-w-96 flex justify-center">
+   <form action="" class="mb-10">
+         <ul class="mt-6 ">
+
+            <ul class="flex p-3">
+            <li class=" rounded-full mr-2">
+            <input class="w-44  p-3 rounded-md" name="" type="text"  placeholder="Enter your name" required />
+            </li>
+            <li class="">
+            <input class="w-44 p-3" id="email4" name="" type="email"  placeholder="Enter your email" required />
+            </li>
+            </ul>
+            
+            <li class="w-96 p-2">
+            <input class=" w-full p-3 border-0 " name="" type="text"  placeholder="Subject" required />
+            </li>
+        
+            <li class="p-2">
+            <textarea class="p-6 w-full" id="comment" name="" placeholder="Leave a comment..." required rows="4"></textarea>
+            </li>
+         </ul>
+                
+            <button type="submit" class=" ml-4 mt-4  h-12 w-36  mb-0  hbg-[#ff6b55] tracking-tighter rounded-lg text-white 
+            border-t-4 border-l-4 border-t-[#ef9685] border-l-[#ef9685] bg-black hover:border-0 hover:duration-700 hover:border-r-4 hover:border-b-4 hover:border-r-[#f4ede6] hover:border-b-[#f4ede6] sticky font-serif font-semibold text-center
+            ">Submit</button>
+        
+
+   </form>
+  </div>
+
+
+</div>
+<!-- {/* div card 1st End */} -->
+
+
+<!-- {/* div card 2nd */} -->
+
+<div class=" sticky max-w-sm flex justify-center text-center ">
+ <!-- {/* <img class=" absolute w-full h-full opacity-100  " src="img/bg/h2-contact-area.png" alt="bg" /> */} -->
+  <div  class=" lg:p-10 p-8 md:p-6 -translate-y-10 ">
+  <img class=" sticky " src="img/bg/h2-contact-img.png" alt="" />
+</div>
+</div>
+<!-- {/*div  card 2nd End */} -->
+
+
+<!-- {/*div card 3rd */} -->
+
+<div class="w-96">
+     <!-- {/* <img class=" absolute w-96 h-full opacity-100 " src="img/bg/h2-contact-area.png" alt="bg" /> */} -->
+  <div  class="">
+  <div class="lg:mt-3 flex">
+  <img class=" absolute lg:mt-20 mt-6 p-6" src="img/icon/contact-title-vec.svg" alt="" />
+  </div>
+  <h5 class=" sticky lg:mt-12 p-6 ml-3 cursor-text text-5xl font-extrabold  font-mono text-gray-900 dark:text-white">
+   FAQ
+  </h5>
+
+ <div class=" sticky mt-6 lg:mb-16 mb-20">
+    <!-- Accordian -->
+    <div class=" ">
+        <div class="tab  px-5 py-0  rounded-lg relative">
+            <input type="radio" name="faq" id="faq1" class="appearance-none peer">
+            <label for="faq1" class="flex items-center text-lg font-semibold
+              after:absolute after:content-['+'] after:right-5 after:text-2xl
+               after:text-gray-400 hover:after:text-gray-900 peer-checked:after:transform peer-checked:after:rotate-45">
+                <!-- <h2 class="mr-2 h-8 w-8 bg-cyan-400 grid place-items-center text-white rounded-full">01</h2> -->
+                <h3 class="mr-2">01. In Et Finibus Lectus. Donec Scelerisque Tortor?</h3>
+            </label>    
+            <div class="answers mt-5 h-0 overflow-hidden transition ease-in-out duration-500 peer-checked:h-full ">
+                <p>Pellentesque maximus augue orci, quis congue purus iaculis id. Maecenas eudocl lorem quis massal molestie vulputate in
+                     sit amet diam. Cras eu odio sit amet ont tellus. Cras ut sollicitudin urna. Vivamus blandit, </p>
+            </div>  
+         </div>
+         <div class="tab  px-5 py-0  rounded-lg relative">
+            <input type="radio" name="faq" id="faq2" class="appearance-none peer">
+            <label for="faq2" class="flex items-center text-lg font-semibold 
+              after:absolute after:content-['+'] after:right-5 after:text-2xl
+               after:text-gray-400 hover:after:text-gray-900 peer-checked:after:transform peer-checked:after:rotate-45">
+                <!-- <h2 class="mr-2 h-8 w-8 bg-cyan-400 grid place-items-center text-white rounded-full">01</h2> -->
+                <h3 class="mr-2">02. Rhoncus Turpis Porta Non Curabitur Interdum?</h3>
+            </label>    
+            <div class="answers mt-5 h-0 overflow-hidden transition ease-in-out duration-500 peer-checked:h-full ">
+                <p>Pellentesque maximus augue orci, quis congue purus iaculis id. Maecenas eudocl lorem quis massal molestie vulputate in sit
+                     amet diam. Cras eu odio sit amet ont tellus. Cras ut sollicitudin urna. Vivamus blandit,</p>
+            </div>  
+         </div>
+         <div class="tab  px-5 py-0  rounded-lg relative">
+            <input type="radio" name="faq" id="faq3" class="appearance-none peer">
+            <label for="faq3" class="flex items-center text-lg font-semibold 
+              after:absolute after:content-['+'] after:right-5 after:text-2xl
+               after:text-gray-400 hover:after:text-gray-900 peer-checked:after:transform peer-checked:after:rotate-45">
+                <!-- <h2 class="mr-2 h-8 w-8 bg-cyan-400 grid place-items-center text-white rounded-full">01</h2> -->
+                <h3 class="mr-2">03. Donec Ac Enim Vitae Ligula Ultrices Accum?</h3>
+            </label>    
+            <div class="answers mt-5 h-0 overflow-hidden transition ease-in-out duration-500 peer-checked:h-full ">
+                <p>Pellentesque maximus augue orci, quis congue purus iaculis id. Maecenas eudocl lorem quis massal molestie vulputate in sit
+                     amet diam. Cras eu odio sit amet ont tellus. Cras ut sollicitudin urna. Vivamus blandit,</p>
+            </div>  
+         </div>
+         <div class="tab  px-5 py-0  rounded-lg relative">
+            <input type="radio" name="faq" id="faq4" class="appearance-none peer">
+            <label for="faq4" class="flex items-center text-lg font-semibold 
+              after:absolute after:content-['+'] after:right-5 after:text-2xl
+               after:text-gray-400 hover:after:text-gray-900 peer-checked:after:transform peer-checked:after:rotate-45">
+                <!-- <h2 class="mr-2 h-8 w-8 bg-cyan-400 grid place-items-center text-white rounded-full">01</h2> -->
+                <h3 class="mr-2">04. Donec Ac Enim Vitae Ligula Ultrices Accum?</h3>
+            </label>    
+            <div class="answers mt-5 h-0 overflow-hidden transition ease-in-out duration-500 peer-checked:h-full ">
+                <p>Pellentesque maximus augue orci, quis congue purus iaculis id. Maecenas eudocl lorem quis massal molestie 
+                    vulputate in sit amet diam. Cras eu odio sit amet ont tellus. Cras ut sollicitudin urna. Vivamus blandit,</p>
+            </div>  
+         </div>
+     </div>
+    
+ </div> 
+
+
+
+</div>
+</div>
+
+<!-- {/* div card 3rd End */} -->
+
+</div>
+   <!-- 7th Section -->
+
+   <!-- 8th Section Coustemer -->
+   <div class=" lg:mb-10   bg-[#ffffff] w-full items-center justify-center overflow-hidden transition-transform ">
+       
+    <!-- {/* Card 2*/}  -->
+  <div class="">
+    <h1 class="text-center lg:mt-12 mt-8 text-2xl lg:text-5xl  font-sans font-extrabold text-[#001d23] dark:text-white">
+    What Our Customer Say
+     </h1>
+</div> 
+  
+  <br />
+  <br />
+  
+  <div class="bg-[#f3f3f3]  mt-4 flex  mb-8 max-md:flex-wrap lg:w-full ml-4 lg:ml-0 mr-4 lg:mr4 rounded-lg justify-between overflow-hidden sticky cursor-pointer">
+     <img src="" alt="" />
+     <!-- {/* 1 st */} -->
+     <div class=" w-full flex justify-center items-center sticky">
+      <div class=" p-8 ">
+        <div class="flex">
+        <img src="img/icon/truspilot.svg" alt="" /> <span class="mt-3 ml-3 font-semibold">Rating</span>
+        </div>
+          <p class=""><span>⭐⭐⭐⭐⭐</span> 190 reviews</p>
+      </div>
+     </div>
+    <!-- {/* 2 nd */} -->
+     <div class="p-6 w-full flex justify-center items-center sticky"> 
+     <img class=" absolute" src="img/icon/total-review-star.svg" alt="" />
+      <h1 class="text-3xl font-extrabold">4.9</h1>
+     </div>
+
+     <!-- {/* 3 rd */} -->
+     <div class=" w-full flex justify-center items-center lg:mr-8 sticky">
+      <div class="p-8">
+     
+      <!-- {/* total-review-star.svg */} -->
+        <div class="flex">
+        <img src="img/icon/google.svg" alt="" /> <span class="mt-2 ml-3 font-semibold">Rating</span>
+        </div>
+          <p class=""><span>⭐⭐⭐⭐⭐</span> 390 reviews</p>
+      </div>
+     </div>
+
+   </div>
+
+    <div class="flex h-full mb-12 mt-16 max-sm:flex-wrap max-md:flex-wrap w-full items-center justify-center overflow-hidden sticky  cursor-pointer bg-[#fbfbfb]">
+    
+    <div class="w-full ml-6 mr-6 lg:ml-6 lg:mr-6 md:ml-1 md:mr-0 mb-8 lg:mb-0 bg-[#ffffff]">
+    
+    <Card class="">
+      
+          <div class=" flex justify-between">
+          <img class="" src="img/icon/left-quat.svg" alt="" />
+            <img class=" sticky flex justify-end " src="img/icon/h2-testimonial-vec-right.svg" alt="" />
+          </div>
+        
+        <h5 class=" cursor-text text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white mt-2 mb-6">
+        Sebastian Ethan
+        </h5>
+        <p class=" cursor-text font-mono tracking-tight justify-center items-center text-center text-gray-700 dark:text-gray-400 mb-2 mt-2">
+        Pellentesque maximus augue orci, quisdal andosp Pellentesque maximus augue orci, quisoki congue Nullam egestas, nisi id mollis elementum.
+        </p>
+        <div class=" flex justify-between">
+          <img class="" src="img/icon/h2-testimonial-vec-left.svg"  alt="" />
+            <img class=" sticky flex justify-end " src="img/icon/right-quat.svg" alt="" />
+          </div>
+      </Card>
+      <div class="flex justify-center items-center text-center">
+              <img class="flex rounded-full p-6" src="img\bg\h2-testi-1.png" alt="" />
+      </div>
+    
+    </div>
+
+      <!-- {/* End card 1st */} -->
+
+  <!-- {/* card 2nd */} -->
+  
+  <div class="w-full ml-6 mr-6 lg:ml-6 lg:mr-6 md:ml-1 md:mr-1 mb-8 lg:mb-0  ">
+  
+    <Card  class=" ">
+    <div class=" flex justify-between">
+          <img class="" src="img/icon/left-quat.svg" alt="" />
+            <img class=" sticky flex justify-end " src="img/icon/h2-testimonial-vec-right.svg" alt="" />
+      </div>
+        <h5 class="text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white cursor-text mt-2 mb-6">
+        Anthony Dylan
+        </h5>
+        <p class="font-mono tracking-tight justify-center items-center text-center text-gray-700 dark:text-gray-400 cursor-text mb-2 mt-2">
+        Pellentesque maximus augue orci, quisdal andosp Pellentesque maximus augue orci, quisoki congue Nullam egestas, nisi id mollis elementum.
+        </p>
+        <div class=" flex justify-between">
+          <img class="" src="img/icon/h2-testimonial-vec-left.svg"  alt="" />
+            <img class=" sticky flex justify-end " src="img/icon/right-quat.svg" alt="" />
+          </div>
+      </Card>
+      <div class="flex justify-center items-center text-center">
+              <img class="flex rounded-full p-6" src="img\bg\h2-testi-2.png" alt="" />
+            </div>
+    
+    </div>
+  
+      <!-- {/* card 2nd End */} -->
+    
+
+    </div>
+  
+</div>
+   <!-- 8th Section  Coustemer-->
+
+   <!-- 9th Section Team -->
+    <section>
+        <div class=" ml-1  mr-1 justify-between items-center bg-[#fef8ef]  ">
+            <div class="justify-end items-end flex">
+            <img class=" absolute flex translate-y-52" src="img/bg/team/team-vector-1.png" alt="" />
+             
+            </div>
+             <div class="">
+             <h1 class="text-center mt-4 lg:p-10 lg:mb-12  text-2xl lg:text-5xl  font-sans font-extrabold text-[#001d23] dark:text-white">
+             Our Best Working Team
+              </h1>
+         </div>  
+         
+         <!-- <Carousel indicators={true} slideInterval={4000} leftControl={true} rightControl={true} class="sm:h-96 max-sm:h-96 lg:h-96 w-full mb-16 overflow-hidden"> -->
+          <div class="grid h-auto grid-cols-4 lg:grid-cols-5  gap-2  justify-around mb-16">
+              
+              <!-- {/* 1st team card start*/} -->
+              <div class="ml-4 md:ml rounded-lg bg-[#ffffff]  transition-transform max-sm:w-48 max-md:w-36 ">
+               <div class="translate-y-2 ">
+               <img class=" transition rounded-md md:translate-x-3 md:-translate-y-3 md:hover:translate-x-4 md:hover:translate-y-24 " src="img/bg/team/h2-team-3.png" alt="..." />
+               <h1 class="transition  md:translate-x-3 font-mono md:hover:-translate-y-56 md:text-2xl md:mt-2 mt-6">Jackson Mateo</h1>
+               <h5 class="transition  mt-2 md:translate-x-3 mb-6 md:hover:-translate-y-52 text-[#f46f30]">Veterinary Assistant</h5>
+               </div>
+         
+               <div class=" hidden md:block absolute p-2 opacity-0 hover:opacity-100 bg-[#ffffff]  -translate-y-80 rounded-lg">
+               <img class="w-56 rounded-md translate-x-3  translate-y-28 " src="img/bg/team/h2-team-3.png" alt="..." />
+               <!-- <Tooltip class="translate-x-8 translate-y-14 w-28" content={
+             <div class="flex ">
+                 <ul class="flex">
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaFacebookF/>
+                   </Link>
+                 </li>
+                 <li class="sticky  hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaTwitter/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaPinterestP/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <PiInstagramLogoThin/>
+                   </Link>
+                 </li>
+         
+                 </ul>
+             </div>
+               } style="light" placement="right">
+                 <Button class=" rounded-se-full translate-x-8 translate-y-14">
+                     <IoShareSocialSharp/>
+                 </Button>
+               </Tooltip> -->
+               <h1 class="  translate-x-4 font-mono -translate-y-56 text-2xl  p-2">Jackson Mateo</h1>
+               <h5 class="  translate-x-4 mb-0 -translate-y-52 text-[#f46f30]">Veterinary Assistant</h5>
+               </div>
+               </div>
+               <!-- {/* 1st team card End */} -->
+         
+               <!-- {/* 2nd team card start */} -->
+               <div class=" hidden sm:block md:ml-4 ml-16 rounded-lg bg-[#ffffff]  transition-transform max-md:w-36">
+               <div class="translate-y-2 ">
+               <img class=" transition rounded-md md:translate-x-3 md:-translate-y-3 md:hover:translate-x-4 md:hover:translate-y-24 " src="img/bg/team/h2-team-4.png" alt="..." />
+               <h1 class="transition  md:translate-x-3 font-mono md:hover:-translate-y-56 md:text-2xl md:mt-2 mt-8">Madison Ellie</h1>
+               <h5 class="transition  mt-2 md:translate-x-3 mb-6 md:hover:-translate-y-52 text-[#f46f30]">Groomer Manager</h5>
+               </div>
+         
+               <div class="hidden md:block absolute p-2 opacity-0 hover:opacity-100 bg-[#ffffff]  -translate-y-80 rounded-lg">
+               <img class="w-56 rounded-md translate-x-3  translate-y-28 " src="img/bg/team/h2-team-4.png" alt="..." />
+               <!-- <Tooltip class="translate-x-8 translate-y-14 w-28" content={
+             <div class="flex ">
+                 <ul class="flex">
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaFacebookF/>
+                   </Link>
+                 </li>
+                 <li class="sticky  hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaTwitter/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaPinterestP/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <PiInstagramLogoThin/>
+                   </Link>
+                 </li>
+         
+                 </ul>
+             </div>
+               } style="light" placement="right">
+                 <Button class=" rounded-se-full translate-x-8 translate-y-14">
+                     <IoShareSocialSharp/>
+                 </Button>
+               </Tooltip> -->
+               <h1 class="  translate-x-4 font-mono -translate-y-56 text-2xl mt-0">Madison Ellie</h1>
+               <h5 class="  translate-x-4 mb-0 -translate-y-52 text-[#f46f30]">Groomer Manager</h5>
+               </div>
+               </div>
+               <!-- {/* 2nd team card End      */} -->
+              
+              <!-- {/* 3rd team card start */} -->
+              <div class=" hidden sm:block md:ml-4 ml-20 rounded-lg bg-[#ffffff]  transition-transform max-md:w-36">
+               <div class="translate-y-2 ">
+               <img class=" transition rounded-md md:translate-x-3 md:-translate-y-3 md:hover:translate-x-4 md:hover:translate-y-24 " src="img/bg/team/h2-team-2.png" alt="..." />
+               <h1 class="transition  md:translate-x-3 font-mono md:hover:-translate-y-56 md:text-2xl md:mt-2 mt-8">Scarlett Emily</h1>
+               <h5 class="transition  mt-2 md:translate-x-3 mb-6 md:hover:-translate-y-52 text-[#f46f30]">Kennel Assistant</h5>
+               </div>
+         
+               <div class="hidden md:block absolute p-2 opacity-0 hover:opacity-100 bg-[#ffffff]  -translate-y-80 rounded-lg">
+               <img class="w-56 rounded-md translate-x-3  translate-y-28 " src="img/bg/team/h2-team-2.png" alt="..." />
+               <!-- <Tooltip class="translate-x-8 translate-y-14 w-28" content={
+             <div class="flex ">
+                 <ul class="flex">
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaFacebookF/>
+                   </Link>
+                 </li>
+                 <li class="sticky  hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaTwitter/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaPinterestP/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <PiInstagramLogoThin/>
+                   </Link>
+                 </li>
+         
+                 </ul>
+             </div>
+               } style="light" placement="right">
+                 <Button class=" rounded-se-full translate-x-8 translate-y-14">
+                     <IoShareSocialSharp/>
+                 </Button>
+               </Tooltip> -->
+               <h1 class="  translate-x-4 font-mono -translate-y-56 text-2xl mt-0">Scarlett Emily</h1>
+               <h5 class="  translate-x-4 mb-0 -translate-y-52 text-[#f46f30]">Kennel Assistant</h5>
+               </div>
+               </div>
+               <!-- {/* 3rd team card End      */} -->
+          
+           <!-- {/* 4th team card start */} -->
+           <div class="md:ml-4 ml-24 rounded-lg bg-[#ffffff] hidden md:block  transition-transform max-sm:w-48 max-sm:ml-36 max-md:w-36 ">
+               <div class="translate-y-2 ">
+               <img class=" transition rounded-md md:translate-x-3 md:-translate-y-3 md:hover:translate-x-4 md:hover:translate-y-24 " src="img/bg/team/h2-team-1.png" alt="..." />
+               <h1 class="transition  md:translate-x-3 font-mono md:hover:-translate-y-56 md:text-2xl md:mt-2 mt-8">Kash Preston</h1>
+               <h5 class="transition  mt-2 md:translate-x-3 mb-6 md:hover:-translate-y-52 text-[#f46f30]">Co-Founder</h5>
+               </div>
+         
+               <div class=" hidden md:block absolute p-2 opacity-0 hover:opacity-100 bg-[#ffffff]  -translate-y-80 rounded-lg">
+               <img class="w-56 rounded-md translate-x-3  translate-y-28 " src="img/bg/team/h2-team-1.png" alt="..." />
+               <!-- <Tooltip class="translate-x-8 translate-y-14 w-28" content={
+             <div class="flex ">
+                 <ul class="flex">
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaFacebookF/>
+                   </Link>
+                 </li>
+                 <li class="sticky  hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaTwitter/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaPinterestP/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <PiInstagramLogoThin/>
+                   </Link>
+                 </li>
+         
+                 </ul>
+             </div>
+               } style="light" placement="right">
+                 <Button class=" rounded-se-full translate-x-8 translate-y-14">
+                     <IoShareSocialSharp/>
+                 </Button>
+               </Tooltip> -->
+               <h1 class="  translate-x-4 font-mono -translate-y-56 text-2xl mt-0">Kash Preston</h1>
+               <h5 class="  translate-x-4 mb-0 -translate-y-52 text-[#f46f30]">Co-Founder</h5>
+               </div>
+               </div>
+               <!-- {/* 4th team card End      */} -->
+               
+         
+         
+          <!-- {/* 5th team card start */} -->
+          <div class="ml-4 hidden lg:block rounded-lg bg-[#ffffff]  transition-transform ">
+               <div class="translate-y-2 ">
+               <img class=" transition rounded-md translate-x-3 -translate-y-3 hover:translate-x-4 hover:translate-y-24 " src="img/bg/team/h2-team-5.png" alt="..." />
+               <h1 class="transition  translate-x-3 font-mono hover:-translate-y-56 text-2xl mt-2">Gorjona Hiller</h1>
+               <h5 class="transition  mt-2 translate-x-3 mb-6 hover:-translate-y-52 text-[#f46f30]">Daycare Manager</h5>
+               </div>
+         
+               <div class=" absolute p-2 opacity-0 hover:opacity-100 bg-[#ffffff]  -translate-y-80 rounded-lg">
+               <img class="w-56 rounded-md translate-x-3  translate-y-28 " src="img/bg/team/h2-team-5.png" alt="..." />
+               <!-- <Tooltip class="translate-x-8 translate-y-14 w-28" content={
+             <div class="flex ">
+                 <ul class="flex">
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaFacebookF/>
+                   </Link>
+                 </li>
+                 <li class="sticky  hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaTwitter/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <FaPinterestP/>
+                   </Link>
+                 </li>
+                 <li class="sticky hover:text-[#ff6b55] rounded-full p-1">
+                 <Link href="">
+                   <PiInstagramLogoThin/>
+                   </Link>
+                 </li>
+         
+                 </ul>
+             </div>
+               } style="light" placement="right">
+                 <Button class=" rounded-se-full translate-x-8 translate-y-14">
+                     <IoShareSocialSharp/>
+                 </Button>
+               </Tooltip> -->
+               <h1 class="  translate-x-4 font-mono -translate-y-56 text-2xl mt-0">Gorjona Hiller</h1>
+               <h5 class="  translate-x-4 mb-0 -translate-y-52 text-[#f46f30]">Daycare Manager</h5>
+               </div>
+               </div>
+               <!-- {/* 5th team card End      */} -->
+                
+             </div>
+         
+             <!-- </Carousel> -->
+         
+             <div class="hidden lg:block w-full h-4 mb-24">
+         
+             </div>
+             </div>
+    </section>
+   <!-- 9th Section Team -->
+
+   <!-- 10th Section Blogs-->
+    <section>
+        <div class="w-full  lg:p-14">
+       
+            <h1 class="lg:text-5xl text-3xl font-serif tracking-tighter font-bold text-center mb-4">Our Newest Blogs</h1>
+   
+      <div class="bg-[#fbfbfb] mt-14 flex  mb-16 max-md:flex-wrap lg:w-full  rounded-lg justify-between items-center overflow-hidden sticky ">
+       
+              <!-- {/* 1st Blog */} -->
+        <div class="w-full mb-6 md:mb-0 lg:mb-0  bg-[#fbfbfb] border-0 p-2 ">
+           <img src="img/blog/blog4.png" alt="blog-1" class="w-full h-full rounded-t-2xl p-3 transition-all ease-in hover:p-2" />
+          
+         <div class="">
+           
+           <p class="font-mono p-1 text-md text-gray-800 hover:text-[#f46f30] opacity-75"><span class="text-[#ff6b55] text-2xl font-extrabold">-</span> August 12, 2022 <span class="text-[#ff6b55] font-extrabold">|</span> Grooming</p>
+         <h5 class="ml-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white font-serif">
+           Donec Venenatis Exid Nibah Goramt Iaculisoni Or Clonal Interdum.</h5>
+         <p class=" text-[#ff6b55] dark:text-gray-400 font-semibold mt-4 ml-4">
+            <Link href="" class="text-lg hover:text-black">
+             <span class="p-1 rounded-full border-2 hover:text-white hover:bg-black ">Re</span>ad More
+            </Link>
+          </p>
+         </div>
+       </div>
+       <!-- {/* 1st Blog End */} -->
+      
+     <!-- {/* 2nd Blog */} -->
+      <div class="w-full mb-6 md:mb-0 lg:mb-0  bg-[#fbfbfb] border-0 p-2">
+           <img src="img/blog/blog5.png" alt="blog-1" class="w-full h-full rounded-t-2xl p-3  transition-all ease-in hover:p-2" />
+          
+         <div class="">
+           
+           <p class="font-mono p-1 text-md text-gray-800 hover:text-[#f46f30] opacity-75"><span class="text-[#ff6b55] text-2xl font-extrabold">-</span> August 12, 2022 <span class="text-[#ff6b55] font-extrabold">|</span> Grooming</p>
+         <h5 class="ml-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white font-serif">
+           Donec Venenatis Exid Nibah Goramt Iaculisoni Or Clonal Interdum.</h5>
+         <p class=" text-[#ff6b55] dark:text-gray-400 font-semibold mt-4 ml-4">
+            <Link href="" class="text-lg hover:text-black">
+             <span class="p-1 rounded-full border-2 hover:text-white hover:bg-black ">Re</span>ad More
+            </Link>
+          </p>
+         </div>
+       </div>
+       <!-- {/* 2nd Blog End */} -->
+   
+      <!-- {/* 3rd Blog */} -->
+     <div class="w-full mb-12 md:mb-0 lg:mb-0  bg-[#fbfbfb] border-0 p-2">
+           <img src="img/blog/blog6.png" alt="blog-1" class="w-full h-full rounded-t-2xl p-3  transition-all ease-in hover:p-2" />
+          
+         <div class="">
+           
+           <p class="font-mono p-1 text-md text-gray-800 hover:text-[#f46f30] opacity-75"><span class="text-[#ff6b55] text-2xl font-extrabold">-</span> August 12, 2022 <span class="text-[#ff6b55] font-extrabold">|</span> Grooming</p>
+         <h5 class="ml-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white font-serif">
+           Donec Venenatis Exid Nibah Goramt Iaculisoni Or Clonal Interdum.</h5>
+         <p class=" text-[#ff6b55] dark:text-gray-400 font-semibold mt-4 ml-4">
+            <Link href="" class="text-lg hover:text-black">
+             <span class="p-1 rounded-full border-2 hover:text-white hover:bg-black ">Re</span>ad More
+            </Link>
+          </p>
+         </div>
+       </div>
+       <!-- {/* 3rd Blog End */} -->
+          </div>
+           
+             <p class="justify-center text-center items-center">
+             <button class="mb-8 w-56 rounded-lg bg-[#ff6b55] h-12 border-t-4 border-l-4 border-t-[#ef9685] border-l-[#ef9685] hover:bg-black hover:border-0 hover:duration-300 hover:border-r-4 hover:border-b-4 hover:border-r-white hover:border-b-white  sticky text-white font-serif font-semibold text-lg">View All Blog</button>
+   
+             </p>
+       </div>
+    </section>
+   <!-- 10th Section Blogs-->
+
+   <!--11 Footer-->
+   <div class="  bg-[#fff5ed] overflow-hidden">
+            
+    <img class=" overflow-hidden absolute lg:h-96 flex min-h-full" src="img/bg/footer-bg.png" alt="" />
+   
+<div class=" absolute lg:text-center lg:justify-center items-center  lg:translate-x-96 translate-x-3   lg:translate-y-16 ">
+<img class="hidden lg:block translate-x-80" src="img/icon/footer-tt-vec.svg" alt="" />
+<h1 class="lg:text-center  mt-12 h-full  text-3xl lg:text-4xl  font-serif font-extrabold text-[#001d23] dark:text-white cursor-text">
+Want <span class="font-normal">To Keep</span>
+</h1>
+<h1 class="lg:text-center lg:mb-12 p-2 text-3xl lg:text-4xl flex flex-wrap font-serif font-extrabold text-[#001d23] dark:text-white">
+Your Pet In, <span class="font-normal">Our Center</span>?
+</h1>
+<div class="justify-center lg:text-center items-center  sticky ">
+   <button class="mb-2 w-44 mt-6 rounded-lg bg-[#ff6b55] h-14 border-t-4 border-l-4 border-t-[#ef9685] border-l-[#ef9685]
+    hover:bg-black hover:border-0 hover:duration-300 hover:border-r-4 hover:border-b-4 hover:border-r-white hover:border-b-white  text-white font-serif font-semibold text-lg sticky">
+     Book Now
+     </button>
+   </div>
+</div>  
+
+<div class="flex max-sm:translate-y-60   lg:p-20 p-4 max-md:flex-wrap lg:w-full lg:justify-between overflow-hidden sticky ">
+
+<!-- {/* 1st */} -->
+<div class=" font-serif p-6 lg:p-0">
+<h1 class="p-3 text-3xl font-serif font-semibold text-[#8a8a8a]">Contacts</h1>
+<div class=" w-full h-full flex justify-start  sticky"> 
+<div>
+     <img class=" absolute  -translate-x-8 translate-y-6" src="img/icon/phone-icon.svg" alt="" />
+     <ul class="">
+         <li class="p-1">
+             <a href="tel:+880 176 1111 456">+880 176 1111 456</a>
+         </li>
+         <li class="p-1 mb-2">
+         <a href="tel:+880 170 1111 000">+880 170 1111 000</a>
+         </li>
+         <img class="absolute  -translate-x-8 translate-y-5" src="img/icon/envelope.svg" alt="" />
+     
+         <li class="p-1">
+             <a href="mailto:info@example.com">info@example.com</a>
+         </li>
+         <li class="p-1 mb-2">
+         <a href="mailto:info@support.com">info@support.com</a>
+         </li>
+
+         <img class="absolute  -translate-x-8 translate-y-4" src="img/icon/location.svg" alt="" />
+     
+         <li class="p-1">
+             <a >168/170, Avenue 01, Mirpur</a>
+         </li>
+         <li class="p-1">
+         <a >DOHS, Bangladesh</a>
+         </li>
+     
+     </ul>
+</div>
+
+</div>
+</div>
+<!-- {/* 3 rd */} -->
+
+<div class="font-serif font-semibold mb-16 lg:mb-20">
+<h1 class="lg:p-4 p-1 text-3xl font-serif font-semibold text-[#8a8a8a] ">Opening Hours</h1>
+
+<div class=" w-full flex justify-end  sticky">
+ 
+ <div class="mb-14">
+     <h1 class="p-1">Mon - Fri: 9.00AM - 6.00PM</h1>
+     <h1 class="p-1">Saturday: 9.00AM - 6.00PM</h1>
+     <h1 class="p-1">Sunday: Closed</h1>
+
+      <!-- {/* social icon */} -->
+<div class="  inset-0 flex rounded-full items-center justify-between p-4">
+<ul class="mt-8 flex h-full w-full justify-between">
+
+ <li class="sticky hover:text-[#ff6b55] ">
+   <a href="">
+    <i class="fa-brands fa-pinterest"></i>
+   </a>
+ </li>
+
+ <li class="sticky hover:text-[#ff6b55]  text-center">.</li>
+
+  <li class="sticky hover:text-[#ff6b55] ">
+   <a href="">
+     <i class="fa-brands fa-instagram"></i>
+   </a>
+ </li>
+
+ <li class="sticky hover:text-[#ff6b55]  text-center">.</li>
+
+ <li class="sticky hover:text-[#ff6b55] "> 
+ <a href="">
+  <i class="fa-brands fa-twitter"></i>
+ </a>
+ </li>
+
+ <li class="sticky hover:text-[#ff6b55]  text-center">.</li>
+
+ <li class="sticky hover:text-[#ff6b55]">
+ <a href="">
+  <i class="fa-brands fa-facebook"></i>
+ </a>
+ </li>
+
+</ul>
+</div>
+<!-- {/* End Social icon */} -->
+ </div>
+</div>
+</div>
+
+  </div>
+
+<div class="flex justify-between p-8 sticky font-serif translate-y-8 lg:translate-y-0 bg-[#fff5ed] mt-6 lg:mt-0 overflow-hidden">
+<div class="text-sm">
+<h1>© 2023 Scooby Is Proudly Powered By 
+ <a href="" class="ml-2">Egens Lab.</a>
+</h1>
+</div>
+
+<div class=" mr-8 sticky hidden lg:block  ">
+ <div class=" text-xs flex ">
+     <h1 class="mr-4"><a href=""> PRIVACY POLICY</a></h1>
+    <h1 class="mr-4"> <a href="">TERMS & CONDITIONS</a></h1>
+     <h1 class="mr-4"><a href="">SERVICES</a></h1>
+    <h1> <a href=""> HELP</a></h1>
+ </div>
+
+</div>
+</div>
+</div>
+   <!--11 Footer-->
+
+
+   </main>
+   
+   <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+    
+</body>
+</html>
