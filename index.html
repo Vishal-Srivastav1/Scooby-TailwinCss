@@ -31,7 +31,8 @@
               </span>
             </div>
         
-            <ul class="md:flex bg-black md:bg-white lg:bg-white md:items-center z-[-1] md:z-auto md:static overflow-visible  w-full  h-[0vh] md:h-auto left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0  transition-all ease-in duration-500">
+           <div class="list absolute duration-500 md:static md:min-h-fit  min-h-[60h] left-0 top-[-120%] bg-white md:w-auto w-full flex items-center px-5">
+            <ul class="md:flex-row bg-gray-50 w-full flex flex-col md:items-center   ">
               <li class="mx-4 my-6 md:my-0 md:mx-3">
                
                 <div class="main-wrapper relative group">
@@ -158,25 +159,25 @@
                 <a href="#" class="font-semibold hover:text-[#ff6b55] duration-500">About</a>
               </li>
 
-              <button style="border: 1px solid #ff6b55;" class="group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-3 md:py-1 md:mx-2  rounded-full ">
+              <button style="border: 1px solid #ff6b55;" class="list2 group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-2 md:py-1 md:mx-5  rounded-full ">
                 <i class="fa-solid fa-magnifying-glass text-[#ff6b55] group-hover:text-white"></i>
               </button>
-              <button style="border: 1px solid #ff6b55;" class="group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-3 md:py-1 md:mx-2  rounded-full ">
+              <button style="border: 1px solid #ff6b55;" class="list2 group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-2 md:py-1 md:mx-0  rounded-full ">
                 <i class="fa-solid fa-heart text-[#ff6b55] group-hover:text-white"></i>
               </button>
-              <button style="border: 1px solid #ff6b55;" class="group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-3 md:py-1 md:mx-2  rounded-full ">
+              <button style="border: 1px solid #ff6b55;" class="list2 group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-2 md:py-1 md:mx-5  rounded-full ">
                 <i class="fa-solid fa-cart-shopping text-[#ff6b55] group-hover:text-white"></i>
               </button>
-              <button style="border: 1px solid #ff6b55;" class="group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-3 md:py-1 md:mx-2  rounded-full ">
+              <button style="border: 1px solid #ff6b55;" class="list2 group font-[Poppins] text-[#ff6b55] hover:bg-[#ff6b55] duration-500 md:px-2 md:py-1 md:mx-0  rounded-full ">
                 <i class="fa-solid fa-user text-[#ff6b55] group-hover:text-white"></i>
               </button>
         
 
             </ul>
+           </div>
           </nav>
         
-        
-         
+              
     </section>
     <!--1st Section End navbar -->
 
@@ -1431,13 +1432,14 @@ Your Pet In, <span class="font-normal">Our Center</span>?
 </div>
    <!--11 Footer-->
 
-
+ 
    </main>
    
    <script>
     function Menu(e){
-      let list = document.querySelector('ul');
-      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+      let list = document.querySelector('.list');
+      e.name === 'menu' ? 'close' : 'menu'  
+      list.classList.toggle('top-[9%]')   
     }
   </script>
     
